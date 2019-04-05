@@ -2,30 +2,12 @@
 //
 /*
 
-  slider_home (field_repeater)
+  slider_videos (field_repeater)
 
 */
-$slider_home = get_field('slider_home');
+$slider_videos = get_field('slider_videos');
 ?>
 
-<section id="slider1" class="">
-
-  <div class="slide-home">
-      <?php
-      if($slider_home):
-        while(have_rows('slider_home')): the_row();
-          $imagen = get_sub_field('imagen');
-
-        ?>
-        <div class="slide-home-item">
-          <img src="<?php echo $imagen; ?>" alt="">
-        </div>
-        <?php
-          endwhile;
-        endif;
-      ?>
-    </div>
-</section>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -40,9 +22,10 @@ $slider_home = get_field('slider_home');
     <?php
     $c = 0;
        $class = '';
-    if($slider_home):
-      while(have_rows('slider_home')): the_row();
+    if($slider_videos):
+      while(have_rows('slider_videos')): the_row();
         $imagen = get_sub_field('imagen');
+        $texto = get_sub_field('texto');
 
         if ( $c == 1 ) $class .= ' active';
                     else $class = '';
@@ -50,7 +33,7 @@ $slider_home = get_field('slider_home');
         <div class="item <?php echo $class; ?>">
         <img src="<?php echo $imagen; ?>" alt="">
         <div class="carousel-caption">
-
+          <h2><?php echo $texto; ?></h2>
         </div>
       </div>
       <?php

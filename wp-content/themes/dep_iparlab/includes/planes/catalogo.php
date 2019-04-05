@@ -1,11 +1,11 @@
 <section>
-  <div class="container">
-    <div class="row">
+  <div class="container planes">
+    <div class="row planes-titulo">
       <h3>¡Elige tu plan para aprender mas sobre el mercado bursatil!</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="row">
-      <div class="col-md-3">
+    <div class="row planes-catalogo">
+      <div class="col-md-3 planes-catalogo">
         <div class="bloque-naranja">
           <h3>nuestros servicios</h3>
         </div>
@@ -40,7 +40,7 @@
           <h4>investment advisor</h4>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="planes-catalogo">
         <div class="bloque-naranja">
           <h3>ambassador</h3>
           <p>$125</p>
@@ -77,7 +77,7 @@
         </div>
         <button type="button" name="button">empieza</button>
       </div>
-      <div class="col-md-3">
+      <div class="planes-catalogo">
         <div class="bloque-naranja">
           <h3>master</h3>
           <p>$530</p>
@@ -114,7 +114,7 @@
         </div>
         <button type="button" name="button">empieza</button>
       </div>
-      <div class="col-md-3">
+      <div class="planes-catalogo">
         <div class="bloque-naranja">
           <h3>celebrity</h3>
           <p>$1520</p>
