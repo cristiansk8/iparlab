@@ -2,10 +2,10 @@
 //
 /*
 
-  videos_gratis(field_repeater)
+  cursos_certificados(field_repeater)
 
 */
-$videos_gratis= get_field('videos_gratis');
+$cursos_certificados= get_field('cursos_certificados');
 ?>
 
 <section class="block">
@@ -14,8 +14,8 @@ $videos_gratis= get_field('videos_gratis');
   </div>
   <div class="block-gratis">
       <?php
-      if($videos_gratis):
-        while(have_rows('videos_gratis')): the_row();
+      if($cursos_certificados):
+        while(have_rows('cursos_certificados')): the_row();
           $imagen = get_sub_field('imagen');
           $titulo = get_sub_field('titulo');
 

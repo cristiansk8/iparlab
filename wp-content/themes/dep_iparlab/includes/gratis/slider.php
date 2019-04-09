@@ -2,10 +2,10 @@
 //
 /*
 
-  slider_videos (field_repeater)
+  slider_videos_gratis (field_repeater)
 
 */
-$slider_videos = get_field('slider_videos');
+$slider_videos = get_field('slider_videos_gratis');
 ?>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -23,7 +23,7 @@ $slider_videos = get_field('slider_videos');
     $c = 0;
        $class = '';
     if($slider_videos):
-      while(have_rows('slider_videos')): the_row();
+      while(have_rows('slider_videos_gratis')): the_row();
         $imagen = get_sub_field('imagen');
         $texto = get_sub_field('texto');
   $c++;
